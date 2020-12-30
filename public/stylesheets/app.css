@@ -1,0 +1,49 @@
+body{
+    background: #F4F4F4;
+    margin: 0 ;
+}
+
+
+i.icon {
+    font-size: 2em;
+}
+
+.container.main {
+    margin-top: 10.0em;
+}
+
+#delete {
+    display: inline;
+}
+
+.event_box{
+    border-radius: 10px;
+}
+
+
+#event_box1{
+    
+    width:780px;
+    margin: 65px auto;
+    background: #FFF;
+    box-shadow:0px 1px 25px 3px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.z{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pp{
+    
+    font-size: 18px;
+    line-height: normal;
+    font-family: cursive;
+}
+#delete{
+    display: inline;
+}
+
+}

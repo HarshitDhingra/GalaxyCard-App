@@ -1,0 +1,29 @@
+<% include ./partials/header %>
+
+<div class ="event_box" id="event_box1">
+<div class="ui main text container segment">
+    <div class="ui huge header">New Post</div>
+    <form class="ui form" action="/events" method="POST">
+        <div class="field">
+            <label>Title</label>
+            <input onkeydown="return event.key != 'Enter';" type="text" name="event[title]" placeholder="title">
+        </div>
+        <div class="field">
+            <label>User</label>
+            <input onkeydown="return event.key != 'Enter';" type="text" name="event[owner]" placeholder="owner">
+        </div>
+        <div class="field">
+            <label>Image Url</label>
+            <input type="text" name="event[image]" placeholder="image">
+        </div>
+        <div class="field">
+            <label>Details of the Post</label>
+            <textarea name="event[body]"></textarea>
+        </div>
+        <input class="ui violet big basic button" type="submit">
+    </form>
+</div>
+
+</div>
+
+<% include ./partials/footer %>

@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+
+
+ 
+<% events.forEach(function(event){  %>
+<div align="center" class ="event_box" id="event_box1"> 
+   <div style="width:500px; margin:0 auto;>
+    <div class="z"><h3><%= event.title %> </h3> </div>
+    <div><h4>User : <%= event.owner %></h4></div>
+    <div class="ui divided items">
+    <img class="ui rounded image" class="image" src="<%= event.image %>" >
+    <div class="pp"><%= event.body!=null?event.body.substring(0, 150):event.body %>...</div>
+    <br/>
+    <a class = "ui basic blue button" href="/events/<%= event._id %>" > READ MORE</a>
+    
+    </div>
+</div>
+</div>
+
+<% });  %>
+ 
+
+<% include ./partials/footer %>

@@ -1,0 +1,17 @@
+<% include ./partials/header %>
+
+<div align="center" class ="event_box" id="event_box1">
+    <div style="width: 500px; margin: 0 auto;>
+    <span class="z><h2><%= event.title %> </h2></span>
+    <div><h4>User : <%= event.owner %> </h4></div>
+    <img class="ui rounded image" src="<%= event.image %>" >
+    <br/>
+    <div><%= event.body %></div>
+    <br/>
+    <a class = "ui basic blue button" href="/events/<%= event._id %>/edit">Edit</a>
+    <form id ="delete" action="/events/<%= event._id %>/?_method=DELETE" method="POST"> 
+        <button class = "ui basic red button">Delete</button>
+    </form> 
+    </div>
+</div> 
+<% include ./partials/footer %>
